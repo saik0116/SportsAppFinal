@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+<!--        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://griffis.edumedia.ca 'unsafe-eval'; connect-src https://griffis.edumedia.ca;">-->
+       
+      <meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           https://griffis.edumedia.ca
+                           http://griffis.edumedia.ca
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           https://griffis.edumedia.ca
+                           http://griffis.edumedia.ca
+">
+        
+        
+<!--
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+-->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Cordova Template</title>
+    </head>
+    <body>
+     
+      <div id="scores" class="page active" data-role="page">
+            <header>
+                <h1 id="test">Scores of the night</h1>
+          </header>
+          
+           <ul class="result_list">
+               
+           </ul>
+           
+        </div>
+
+          <div id="standings" class="page" data-role="page">
+           
+            <header>
+                <h1 id="stamd">Standings</h1>
+            </header>
+            
+            <table id="teamStandings">
+            <thead>
+                <tr id="wada">
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>T</th>
+                    <th>P</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+            
+            
+            <section class="main">
+                
+            </section>
+        </div>
+        
+        <section data-role="nav" id="nav">
+        <ul class="tabs">
+            <li><a id="nav_gameresults" href="#scores">Scores bahd</a></li>
+            <li><a id="nav_standings" href="#standings">Standings</a></li>
+        </ul>
+        
+    </section>
+      
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

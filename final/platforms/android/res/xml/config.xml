@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.saik0116.madfinal" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Joshua Saikaly</name>
+    <description>
+       MAD9014 sports app final.
+    </description>
+    <author email="saik0116@algonquinlive.com" href="http://cordova.io">
+        saik0116
+    </author>
+    <content src="index.html" />
+    <preferences name="SplashScreen" value="screen" />
+    <preferences name="SplashScreenDelay" value="5000" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <splash density="port-ldpi" src="res/Screens/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="res/Screens/screen-mdpi-portrait.png" />
+    <splash density="port-hdpi" src="res/Screens/screen-hdpi-portrait.png" />
+    <splash density="port-xhdpi" src="res/Screens/screen-xhdpi-portrait.png" />
+    <splash density="land-ldpi" src="res/Screens/screen-ldpi-landscape.png" />
+    <splash density="land-mdpi" src="res/Screens/screen-mdpi-landscape.png" />
+    <splash density="land-hdpi" src="res/Screens/screen-hdpi-landscape.png" />
+    <splash density="land-xhdpi" src="res/Screens/screen-xhdpi-landscape.png" />
+    <icon density="ldpi" src="res/icons/icon-36-ldpi.png" />
+    <icon density="mdpi" src="res/icons/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/icons/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/icons/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" src="res/icons/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/icons/icon-192-xxxhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>
